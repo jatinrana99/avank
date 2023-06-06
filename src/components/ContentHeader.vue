@@ -32,7 +32,7 @@ export default {
 
 .contentHeader {
     background-color: rgb(140, 157, 157);
-    border: 2px solid ;
+    /* border: 2px solid ; */
     display: flex;
     /* justify-content: space-around; */
     width: 1357px;
