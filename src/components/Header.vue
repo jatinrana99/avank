@@ -25,10 +25,9 @@
                 MY EXCHANGE
             </div>
             <div class="name">
-                <div class="nameLogo">
+                
                     <img src="../assets/mdi_user-circle.png" alt="">
                     Name Surname
-                </div>
             </div>
         </div>
        </nav>
@@ -55,6 +54,7 @@ export default {
     height: 96px;
     /* background-color: blanchedalmond; */
     align-content: center;
+    align-items: center;
 
 }
 

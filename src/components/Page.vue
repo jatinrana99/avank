@@ -2,6 +2,7 @@
     <Header></Header>
     <ContentHeader></ContentHeader>
     <NavInfo></NavInfo>
+    <Content></Content>
 
 </template>
 
@@ -9,12 +10,14 @@
 import Header from  './Header.vue'
 import ContentHeader from './ContentHeader.vue'
 import NavInfo from './NavInfo.vue'
+import Content from './Content.vue'
 export default {
     name:`Page`,
     components:{
         Header,
         ContentHeader,
-        NavInfo
+        NavInfo,
+        Content
     },
     data(){
 
