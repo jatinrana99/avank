@@ -7,13 +7,13 @@
             </div>
         <div class="list">
             <ul>
-                <li>EXCHANGE</li>
-                <li>BNPL</li>
-                <li>CARDS</li>
+                <li >EXCHANGE</li>
+                <li >BNPL</li>
+                <li >CARDS</li>
             </ul>
         </div>
         <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" dats-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn dropdown-toggle" type="button" dats-bs-toggle="dropdown" aria-expanded="false" id="en">
                 EN
             </button>
             <!-- <ul>
@@ -46,6 +46,10 @@ export default {
 .header{
     height: 96px;
     /* background-color: aqua; */
+width: 1440px;
+height: 80px;
+
+
 }
 
 .header-main nav{
@@ -76,4 +80,78 @@ export default {
     margin-top: 34px;
     margin-bottom: 42px;
 }
+
+
+li{
+
+width: 84px;
+height: 17px;
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+/* black/transparent/300 */
+
+color: rgba(54, 65, 64, 0.64);
+margin-right: 40px;
+}
+
+#en{
+
+width: 18px;
+/* height: 15px; */
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+text-align: center;
+
+/* black/transparent/200 */
+
+color: rgba(54, 65, 64, 0.32);
+}
+
+.myExchange{
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+/* black/transparent/300 */
+
+color: rgba(54, 65, 64, 0.64);
+margin-top: 8px;
+}
+
+
+.name{
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+/* black/solid/500 */
+
+color: #364140;
+
+}
+
 </style>

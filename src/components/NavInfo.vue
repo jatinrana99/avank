@@ -9,7 +9,7 @@
 
             <div id="content">To get the full functionality of the service please pass verification</div>
         </section>
-        <button>VERIFY</button>
+        <div class="verify">VERIFY</div>
     </div>
 </template>
 
@@ -68,7 +68,7 @@ color: rgba(54, 65, 64, 0.64);
 
 }
 
-button{
+.verify{
 background: linear-gradient(88.84deg, #00AC99 0%, #00E0B0 100%);
 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
 border-radius: 12px;

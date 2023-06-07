@@ -66,6 +66,34 @@ display: initial;
     padding-left: 64px;
     padding-right: 63px;
     padding-bottom:14px ;
+
+background: linear-gradient(88.84deg, #00AC99 0%, #00E0B0 100%);
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+border-radius: 12px;
+margin-top: 24px;
+margin-bottom: 24px;
+margin-left: 40px;
+padding-top: 14px;
+padding-bottom: 14px;
+padding-right: 71px;
+padding-left: 71px;
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+text-align: center;
+
+/* white/solid/500 */
+
+color: #FFFFFF;
+
+
+
 }
 
 #lockAccount{

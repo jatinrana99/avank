@@ -2,6 +2,7 @@
     <section id="mainContent">
 
         <div id="content">
+            <section id="per">
         <div class="information">
             <p>Personal Information</p>
         </div>
@@ -34,7 +35,7 @@
             <p>* Can be changed only through communication with the Administration.</p>
             <p> Contact <a href="" id="support">support@avank.ge</a></p>
         </div>
-        
+    </section>
         <div class="change">
             <div>
                 <a href="" class="Pchange">Change Password</a>
@@ -62,7 +63,7 @@
                 </p>
 
                 <div>
-                <span>
+                <span class="money">
                     15,000.00
                 </span>
                 <span class="Climit">/15,000.00</span>
@@ -75,7 +76,7 @@
                 </p>
 
                 <div>
-                <span>
+                <span class="money">
                     15,000.00
                 </span>
                 <span class="Climit">/15,000.00</span>
@@ -85,7 +86,7 @@
                 <section class="limit" >
                 <p class="Climit">Transaction Limit </p>
                 <div>
-                <span>
+                <span class="money">
                     15,000.00     
                 </span>
                 <span class="Climit">/15,000.00</span>
@@ -97,7 +98,7 @@
                     <p>
                         To get the full functionality of the service please pass verification
                     </p>
-                    <button>Verify</button>
+                    <div class="verify">Verify</div>
                 </section>
         
             </div>
@@ -116,6 +117,24 @@ export default {
 
 <style scoped>
 
+.money{
+    
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+text-align: right;
+
+/* brand/solid/500 */
+
+color: #00AC99;
+}
+
+#per{
+    border-bottom: 1px solid rgba(54, 65, 64, 0.16);
+    margin-bottom: 24px;
+}
 .input p{
 width: 291px;
 height: 38px;
@@ -133,7 +152,7 @@ justify-content: space-between;
 }
 
 
-button{
+.verify{
 background: linear-gradient(88.84deg, #00AC99 0%, #00E0B0 100%);
 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
 border-radius: 12px;
@@ -204,6 +223,7 @@ color: #364140;
     width: 1249px;
     margin-left: 142px;
     display: flex;
+    /* border-bottom: 2px solid; */
 }
 
 #content{
