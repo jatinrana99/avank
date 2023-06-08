@@ -102,9 +102,9 @@ export default {
 
 <style scoped>
 
-#scroll{
+/* #scroll{
     position: absolute;
-}
+} */
 
 #line{
     border-bottom: 1px solid rgba(54, 65, 64, 0.16);
@@ -133,6 +133,8 @@ top: 21px;
 
 /* width: 1440px; */
 height: 330px;
+width: 1537px;
+
 
 }
 
@@ -278,7 +280,7 @@ margin-bottom: 24px;
     margin-right: 58px;
 }
 
-#Footer{
+/* #Footer{
     margin-top: 96px;
-}
+} */
 </style>

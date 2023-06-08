@@ -1,9 +1,14 @@
 <template>
-    <Header></Header>
-    <ContentHeader></ContentHeader>
-    <NavInfo></NavInfo>
-    <Content></Content>
-    <Footer></Footer>
+    <div class="page">
+    <div class="page1">
+    <Header ></Header>
+    <ContentHeader ></ContentHeader>
+    <NavInfo ></NavInfo>
+    <Content ></Content>
+    <Footer ></Footer>
+</div>
+</div>
+   
 
 </template>
 
@@ -30,5 +35,11 @@ export default {
 </script>
 
 <style scoped>
-
+.page{
+    display: flex;
+    justify-content: center;
+}
+.page1{
+    width:1400px;
+}
 </style>
