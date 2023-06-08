@@ -11,7 +11,7 @@
             Lock the Account
         </div>
         <div class="contact" id="logOut">
-            Log Out
+            Log In
         </div>
     </nav>
 
