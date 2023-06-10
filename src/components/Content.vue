@@ -1,0 +1,364 @@
+<template>
+    <section id="mainContent">
+
+        <div id="content">
+            <section id="per">
+        <div class="information">
+            <p>Personal Information</p>
+        </div>
+        <section>
+        <div class="heading">Name*</div>
+        <p class="Pheading">Name</p>
+        </section>
+        
+        <section>
+        <div class="heading">Last Name*</div>
+        <p class="Pheading">Surname</p>
+        </section>
+      
+        <section>
+        <div class="heading">Date of Birth*</div>
+        <p class="Pheading">01.01.1990</p>
+        </section>
+        
+        <section>
+        <div class="heading">Country*</div>
+        <p class="Pheading">Georgia</p>
+        </section>
+        
+        <section>
+        <div class="heading">Postal Address*</div>
+        <p class="Pheading">000089</p>
+        </section>
+
+        <div id="note">
+            <p>* Can be changed only through communication with the Administration.</p>
+            <p> Contact <a href="" id="support">support@avank.ge</a></p>
+        </div>
+    </section>
+        <div class="change">
+            <div>
+                <a href="" class="Pchange">Change Password</a>
+            </div>
+            <div>
+                <a href="" class="Pchange">Change Phone</a>
+            </div>
+            <div>
+                <a href="" class="Pchange">Change Email</a>
+            </div>
+        </div>
+    </div>
+        
+
+    <!-- limits structure start from here -->
+    <section id="group985">
+        <div class="limits">
+            <div>
+                <div id="name">Limits</div>
+            </div>
+            <div class="form">
+                <section class="limit">
+                <p class="Climit">Daily Limit 
+                    <i class="fa-regular fa-circle-question" id="ques1"></i>
+                </p>
+
+                <div>
+                <span class="money">
+                    15,000.00
+                </span>
+                <span class="Climit">/15,000.00</span>
+            </div>
+                </section>
+
+                <section class="limit"  id="monthlyL">
+                <p class="Climit">Monthly Limit 
+                    <i class="fa-regular fa-circle-question" id="ques1"></i>
+                </p>
+
+                <div>
+                <span class="money">
+                    15,000.00
+                </span>
+                <span class="Climit">/15,000.00</span>
+            </div>
+                </section>
+
+                <section class="limit" >
+                <p class="Climit">Transaction Limit </p>
+                <div>
+                <span class="money">
+                    15,000.00     
+                </span>
+                <span class="Climit">/15,000.00</span>
+            </div>
+                </section>
+
+
+                <section class="input">
+                    <p>
+                        To get the full functionality of the service please pass verification
+                    </p>
+                    <div class="verify">Verify</div>
+                </section>
+        
+            </div>
+        </div>
+    </section>
+
+
+    </section>
+</template>
+
+<script>
+export default {
+    name:`Content`
+}
+</script>
+
+<style scoped>
+
+.money{
+    
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+text-align: right;
+
+/* brand/solid/500 */
+
+color: #00AC99;
+}
+
+#per{
+    border-bottom: 1px solid rgba(54, 65, 64, 0.16);
+    margin-bottom: 24px;
+}
+.input p{
+width: 291px;
+height: 38px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+
+/* black/transparent/300 */
+
+color: rgba(54, 65, 64, 0.64);
+justify-content: space-between;
+}
+
+
+.verify{
+background: linear-gradient(88.84deg, #00AC99 0%, #00E0B0 100%);
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+border-radius: 12px;
+margin-top: 24px;
+margin-bottom: 24px;
+margin-left: 40px;
+padding-top: 14px;
+padding-bottom: 14px;
+padding-right: 71px;
+padding-left: 71px;
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+text-align: center;
+
+/* white/solid/500 */
+
+color: #FFFFFF;
+}
+
+.input{
+width: 660px;
+height: 128px;
+
+/* brand/transparent/25 */
+
+background: rgba(0, 172, 153, 0.04);
+border-radius: 16px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-left: 40px;
+padding-right: 40px;
+
+}
+
+#ques1{
+    margin-left: 12px;
+}
+
+.limits{
+    margin-left: 68px;
+}
+
+#name{
+    margin-top: 40px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+
+/* black/solid/500 */
+
+color: #364140;
+}
+
+
+#mainContent{
+    /* border: 2px solid; */
+    width: 1249px;
+    margin-left: 142px;
+    display: flex;
+    /* border-bottom: 2px solid; */
+}
+
+#content{
+    width: 340px;
+    /* black/transparent/25 */
+ padding: 40px;
+
+background: rgba(54, 65, 64, 0.04);
+border-radius: 24px;
+}
+
+.information{
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+
+/* black/solid/500 */
+
+color: #364140;
+}
+
+
+#note{
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+
+/* black/transparent/300 */
+
+color: rgba(54, 65, 64, 0.64);
+}
+
+#support{
+    color:  rgba(54, 65, 64, 0.64);
+    font-weight: 600;
+}
+
+.heading{
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+/* black/transparent/300 */
+
+color: rgba(54, 65, 64, 0.64);
+}
+
+
+.Pheading{
+width: 50px;
+height: 20px;
+left: 222px;
+top: 466px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+
+/* black/solid/500 */
+
+color: #364140;
+}
+
+
+.Pchange{
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 900;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+text-decoration-line: underline;
+
+/* brand/solid/500 */
+
+color: #00AC99;
+}
+
+
+.limit{
+box-sizing: border-box;
+
+height: 64px;
+
+/* black/transparent/25 */
+
+background: rgba(54, 65, 64, 0.04);
+/* black/transparent/100 */
+
+border: 1px solid rgba(54, 65, 64, 0.16);
+border-radius: 16px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+    /* width: 87px; */
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    
+    /* black/solid/500 */
+    
+    color: #364140;
+    margin-bottom: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+
+.Climit{
+
+    margin-bottom: 0px;
+}
+
+.form{
+    margin-top: 24px;
+
+}
+</style>
