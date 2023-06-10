@@ -10,17 +10,46 @@
             <img src="../assets/Lock.png" alt="" id="lockAccountImg">
             Lock the Account
         </div>
-        <div class="contact" id="logOut">
+        <div class="contact" id="logOut" v-on:click="()=> TogglePopup('buttonTrigger')">
             Log In
         </div>
+
+        <Pop v-if="popupTriggers.buttonTrigger" :TogglePopup="
+        ()=>TogglePopup('buttonTrigger')">
+    
+    <Form> </Form>
+    </Pop>
     </nav>
 
 </div>
 </template>
 
 <script>
+import Form from './Form.vue'
+import Pop from './Pop.vue'
+import {ref} from 'vue'
+
 export default {
-    name:`ContentHeader`
+    name:`ContentHeader`,
+    components:{
+        Form,
+        Pop
+    },
+    data(){
+        const popupTriggers = ref({
+            buttonTrigger:false
+        });
+
+        const TogglePopup=(trigger)=>{
+            popupTriggers.value[trigger] =! popupTriggers.value[trigger]
+        };
+
+        return{
+            Pop,
+            popupTriggers,
+            TogglePopup
+        }
+    }
 }
 </script>
 

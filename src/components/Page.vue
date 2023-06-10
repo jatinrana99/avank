@@ -6,7 +6,7 @@
     <NavInfo ></NavInfo>
     <Content ></Content>
     <Footer ></Footer>
-    <Form></Form>
+    <!-- <Form></Form> -->
 </div>
 </div>
    
@@ -19,7 +19,7 @@ import ContentHeader from './ContentHeader.vue'
 import NavInfo from './NavInfo.vue'
 import Content from './Content.vue'
 import Footer from './Footer.vue'
-import Form from './Form.vue'
+// import Form from './Form.vue'
 export default {
     name:`Page`,
     components:{
@@ -28,7 +28,7 @@ export default {
         NavInfo,
         Content,
         Footer,
-        Form
+        // Form
     },
     data(){
 

@@ -1,24 +1,27 @@
 <template>
-    
+    <!-- <Pop v-if="popupTriggers.buttonTrigger" :TogglePopup="
+    ()=>TogglePopup('buttonTrigger')"> -->
     <section>
         <section class="forms">
-            <form class="register" v-on:click.prevent="register">
+            <!-- <form class="register" v-on:click.prevent="register">
                 <h2>Register</h2>
                 <div>
                     <label for="email">Email</label> <br><input type="email" id="email" v-model="register_form.email" class="char">
                     <br>
                     <label for="password">Password</label> <input type="password" id="password" v-model="register_form.password" class="char">
-                    <input type="submit" value="Register" id="button"/>
                 </div>
-            </form>
-
+            </form> -->
+            
             <form class="login" v-on:click.prevent="login">
-                <h2>Login</h2>
+                <h2>Login And Register</h2>
                 <div>
                     <label for="email">Email</label> <br><input type="email" id="email" v-model="login_form.email" class="char">
                     <br>
                     <label for="password">Password</label> <input type="password" id="password" v-model="login_form.password" class="char">
                     <input type="submit" value="Login" id="button" />
+                    <!-- <input type="submit" value="Sign Up" id="button" v-on:click="()=>TogglePopup('buttonTrigger')"/> -->
+                    <!-- for sign up button -->
+                    <input type="submit" value="Register" id="button"/>
                 </div>
             </form>
 
@@ -46,18 +49,24 @@ export default {
             let ans = store.dispatch('register', register_form.value);
             console.log(ans)
         }
-    
-    return{
-        login_form,
-        register_form,
-        login,
-        register
-    }
- }
+
+        
+        return{
+            login_form,
+            register_form,
+            login,
+            register
+        }
+    },
 }
 </script>
 
 <style scoped>
+
+section{
+/* align-items: center; */
+margin-left: 30%;
+}
 
 h2{
 
@@ -74,7 +83,7 @@ color: #232A29;
 }
 
 .forms {
-width: 1396px;
+width: 196px;
 height: 493px;
 /* border: 2px solid ; */
 
@@ -82,7 +91,9 @@ height: 493px;
 
 background-color: #FFFFFF;
 border-radius: 24px;
-display: flex;
+/* display: flex; */
+/* text-align: center; */
+margin-top: 200%;
 }
 
 .char{
@@ -129,7 +140,7 @@ margin-top: 12px;
 .register{
     /* display: flex; */
 text-align: center;
-width: 396px;
+/* width: 396px; */
 height: 493px;
 border: 2px solid ;
 margin-left: 200px;
@@ -137,6 +148,7 @@ margin-right: 200px;
 padding-top: 60px;
 border-radius: 24px;
 background-color: #FFFFFF;
+width: 1230px;
 }
 
 
